@@ -133,7 +133,8 @@ int main ()
 		printf("Escolha a opção desejada no menu abaixo:\n\n");
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
-		printf("\t3 - Deletar nomes\n\n");
+		printf("\t3 - Deletar nomes\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção: ");//Fim do Menu
 	
 		scanf("%i", &opcao); //scanf armazena o dado que o usuário digitar,o %i ou %d é porque o dado vai ser um número INTeiro e o &opcao indica a variável
@@ -152,6 +153,11 @@ int main ()
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0; //Quebra a função e FECHA o sistema
 			break;
 			
 			default:
